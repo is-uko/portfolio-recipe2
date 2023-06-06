@@ -1,0 +1,99 @@
+.body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+.main__contents {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.main__contents--left img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main__contents--right {
+  padding: 0 5%;
+}
+
+.main__contents h2 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.main__contents p {
+  font-size: 16px;
+}
+
+.main__contents h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.main__contents ul li {
+  display: flex;
+}
+
+.main__contents li {
+  border-bottom: 1px dotted #cccccc;
+  padding: 6px 0;
+}
+
+.main__contents li span {
+  margin-left: auto;
+}
+
+.main__contents ol li {
+  list-style: decimal inside;
+}
+
+.button {
+  text-align: center;
+}
+
+.button a {
+  padding: 18px 60px;
+  border: 1px solid #2b2a27;
+}
+
+footer {
+  padding-top: 80px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+footer .sns {
+  padding-bottom: 20.5px;
+}
+
+footer small {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 834px) {
+  .main__contents--left img {
+    height: 700px;
+  }
+
+  .main__contents {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main__contents--left, .main__contents--right {
+    width: 50%;
+  }
+}
